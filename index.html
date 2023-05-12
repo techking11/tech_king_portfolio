@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Own CSS3 with linking SCSS, SASS
     --------------------------------------------------------------------->
-    <link rel="stylesheet" href="./resource/css/style.css">
+    <link rel="stylesheet" href="./resource/scss/style.css">
 
 </head>
 <body>
@@ -42,23 +42,23 @@
                     <div class="logo">
                         <img src="resource/gallery/tech king.jpg" alt="Tech King" width="75">
                     </div>
-                    <a class="navbar-brand" href="#" id="nav-header">Tech King</a>
+                    <a class="navbar-brand" href="index.html" id="nav-header">Tech King</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
+                                <a class="nav-link" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -68,16 +68,19 @@
         <div class="social-icons">
             <ul class="list-group">
                 <li class="list-group-item">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href="https://github.com/techking11" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </li>
                 <li class="list-group-item">
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="https://www.linkedin.com/in/tech-king-143509276/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
                 </li>
                 <li class="list-group-item">
-                    <i class="fa-brands fa-youtube"></i>
-                </li>
-                <li class="list-group-item">
-                    <i class="fa-brands fa-github"></i>
+                    <a href="https://twitter.com/TechKin1132" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
                 </li>
               </ul>
         </div>
@@ -86,12 +89,14 @@
             <p>
                 A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
             </p>
-            <button class="btn btn-primary">Projects</button>
+            <a href="#projects">
+                <button class="btn btn-primary">Projects</button>
+            </a>
         </div>
 
     </header>
 
-    <section class="about_me">
+    <section class="about_me" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -109,146 +114,203 @@
                             I'm a <b>Frontend Web Developer</b> building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <b>Projects</b> section.
                         </p>
                         <p>
-                            I also like sharing content related to the stuff that I have learned over the years in <b>Web Development</b> so it can help other people of the Dev Community. Feel free to Connect or Follow me on my <a href="#">Linkedin</a> where I post useful content related to Web Development and Programming
+                            I also like sharing content related to the stuff that I have learned over the years in <b>Web Development</b> so it can help other people of the Dev Community. Feel free to Connect where I post useful content related to Web Development and Programming
                         </p>
                         <p>
                             I'm open to <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <b>contact</b> me.
                         </p>
-                        <button class="btn btn-primary">Contact</button>
+                        <a href="#contact">
+                            <button class="btn btn-primary">Contact</button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-lg-5 col-md-12 mt-5">
                     <div class="my_skills">
                         <h2>My Skills</h2>
+
+                        <h3 class="skillSubTitle">Frontend Skills</h3>
                         <button class="btn btn-default">HTML</button>
                         <button class="btn btn-default">CSS</button>
-                        <button class="btn btn-default">JavaScript</button>
-                        <button class="btn btn-default">React</button>
                         <button class="btn btn-default">SASS</button>
-                        <button class="btn btn-default">Git</button>
-                        <button class="btn btn-default">GitHub</button>
-                        <button class="btn btn-default">Responsive Design</button>
+                        <button class="btn btn-default">Bootstrap</button>
+                        <button class="btn btn-default">JavaScript</button>
+                        <button class="btn btn-default">jQuery</button>
+                        <button class="btn btn-default">React</button>
+                        <button class="btn btn-default">Material UI</button>
+                        <button class="btn btn-default">Restful API</button>
+                        <button class="btn btn-default">Hosting</button>
+                        <button class="btn btn-default">AJAX & JSON</button>
+                        <button class="btn btn-default">git & github</button>
                         <button class="btn btn-default">SEO</button>
-                        <button class="btn btn-default">Terminal</button>
-                        <button class="btn btn-default">Express Basic</button>
-                        <button class="btn btn-default">SQL Basic</button>
+                        <button class="btn btn-default">Charts</button>
+
+                        <h3 class="skillSubTitle">Design Skills</h3>
+                        <button class="btn btn-default">Photoshop</button>
+                        <button class="btn btn-default">Illustrator</button>
+                        <button class="btn btn-default">Figma</button>
+
+                        <h3 class="skillSubTitle">Backend Skills</h3>
+                        <button class="btn btn-default">NodeJS Basic</button>
+                        <button class="btn btn-default">ExpressJS Basic</button>
+                        <button class="btn btn-default">MySQL</button>
+                        <button class="btn btn-default">SQL</button>
+                        <button class="btn btn-default">PHP</button>
+                        <button class="btn btn-default">C#.NET</button>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header">
                         <h1>Projects</h1>
                         <p class="py-4">
-                            Here you will find some of the personal and clients projects that I created with each project containing its own case study
+                            Here you will find some of the personal and clients projects that I created with each project containing its own case study.
                         </p>
-                    </div>
-                </div>
-                <!-- Dopefolio Project -->
-                <div class="col-lg-7 col-md-12 mt-5">
-                    <div class="gallery">
-                        <img src="resource/gallery/dopefolio.jpeg" alt="" width="100%">
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
-                    <div class="content">
-                        <h2>Dopefolio</h2>
-                        <p>
-                            Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally.
-                        </p>
-                        <button class="btn btn-default">Case Study</button>
                     </div>
                 </div>
 
-                <!-- Welconport Project -->
+                <!-- Admin Dashboard Project -->
                 <p class="mt-3"></p>
                 <div class="col-lg-7 col-md-12 mt-5">
                     <div class="gallery">
-                        <img src="resource/gallery/wilsonport.jpeg" alt="" width="100%">
+                        <img src="resource/gallery/react-admin.jpg" alt="" width="100%">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
                     <div class="content">
-                        <h2>Wilsonport</h2>
+                        <h2>Admin Dashboard</h2>
                         <p>
-                            Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.
+                            Dashboard is a web template that I created targeting for Admin Panal which anyone can use to present their business online.
                         </p>
-                        <button class="btn btn-default">Case Study</button>
+                        <a href="react_admin.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Boreal Coffe Clone Project -->
+                <!-- Material UI Project -->
                 <p class="mt-3"></p>
                 <div class="col-lg-7 col-md-12 mt-5">
                     <div class="gallery">
-                        <img src="resource/gallery/boreal-coffee-clone.jpeg" alt="" width="100%">
+                        <img src="resource/gallery/material ui.jpg" alt="" width="100%">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
                     <div class="content">
-                        <h2>Boreal Coffee Clone</h2>
+                        <h2>Material UI</h2>
                         <p>
-                            I re-created the frontend of Boreal Coffee's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.
+                            Material UI is a web template that I created targeting for Product Post which anyone can use to present their business online.
                         </p>
-                        <button class="btn btn-default">Case Study</button>
+                        <a href="material_ui.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
                     </div>
                 </div>
-
-                <!-- Crown Template Project -->
+                <!-- Golden Love Project -->
                 <p class="mt-3"></p>
                 <div class="col-lg-7 col-md-12 mt-5">
                     <div class="gallery">
-                        <img src="resource/gallery/crown-template.jpeg" alt="" width="100%">
+                        <img src="resource/gallery/gloden love foundation.jpg" alt="" width="100%">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
                     <div class="content">
-                        <h2>Crown Template</h2>
+                        <h2>Golden Love Foundation</h2>
                         <p>
-                            Crown is a web template that I created targeting the restaurant and food industry which anyone can use to present their business online.
+                            Golden Love Foundation is a web template that I created targeting for Health Care Organization which they can use to present their post online.
                         </p>
-                        <button class="btn btn-default">Case Study</button>
+                        <a href="golden_love.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- GTC KyaukPhu Project -->
+                <p class="mt-3"></p>
+                <div class="col-lg-7 col-md-12 mt-5">
+                    <div class="gallery">
+                        <img src="resource/gallery/gtc-kyaukphyu.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
+                    <div class="content">
+                        <h2>GTC - KyaukPhu</h2>
+                        <p>
+                            GTC - KyaukPhu is a web template that I created targeting for Our Government Technological College (KyaukPhyu) which they can use to present their post and data online for students.
+                        </p>
+                        <a href="gtc_kpu.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Green Journey Project -->
+                <p class="mt-3"></p>
+                <div class="col-lg-7 col-md-12 mt-5">
+                    <div class="gallery">
+                        <img src="resource/gallery/green journey.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
+                    <div class="content">
+                        <h2>Green Journey Organization</h2>
+                        <p>
+                            Green Journey Organization is a web template that I created targeting for Non-Profit Organization which they can use to present their post and data online.
+                        </p>
+                        <a href="green_journey.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- GTC KanTeen Project -->
+                <p class="mt-3"></p>
+                <div class="col-lg-7 col-md-12 mt-5">
+                    <div class="gallery">
+                        <img src="resource/gallery/gtc akanteen.jpg" alt="" width="100%">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 d-flex align-items-center main-content">
+                    <div class="content">
+                        <h2>GTC - KanTeen</h2>
+                        <p>
+                            GTC - KanTeen is a web template that I created targeting for College KanTeen which they can use to present and deliver their menu online.
+                        </p>
+                        <a href="gtc_kanteen.html" target="_blank">
+                            <button class="btn btn-default">Case Study</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="header">
                         <h1>Contact</h1>
                         <p class="py-4">
-                            Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+                            Feel free to Contact me and I will get back to you as soon as possible.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-md-12 col-lg-10 mt-3">
                     <div class="contact-form">
-                        <form action="" method="post" class="form">
-                            <div class="form-group">
-                                <label for="" class="form-label">Name</label>
-                                <input type="text" name="" id="" placeholder="Enter Your Name" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="form-label">Email</label>
-                                <input type="email" name="" id="" placeholder="Enter Your Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="form-label">Mesage</label>
-                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter Your Message"></textarea>
-                            </div>
-                            <button class="btn btn-default mt-3">Submit</button>
-                        </form>
+                        <h2>To contact me</h2>
+                        <div class="contact-group">
+                            Email:
+                            <a href="#">techking1132000@gmail.com</a>
+                        </div>
+                        <div class="contact-group">
+                            Phone no:
+                            <a href="#">09893569226</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -262,7 +324,7 @@
                 <div class="col-sm-6">
                     <h4>Mr. Nay Myo Aung</h4>
                     <p>
-                        A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+                        A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.
                     </p>
                 </div>
                 <div class="col-sm-1 col-md-2 col-lg-4"></div>
@@ -271,16 +333,19 @@
                     <div class="social">
                         <ul class="list-group list-group-horizontal">
                             <li class="list-group-item">
-                                <i class="fa-brands fa-linkedin-in"></i>
+                                <a href="https://github.com/techking11" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
                             </li>
                             <li class="list-group-item">
-                                <i class="fa-brands fa-twitter"></i>
+                                <a href="https://www.linkedin.com/in/tech-king-143509276/" target="_blank">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
                             </li>
                             <li class="list-group-item">
-                                <i class="fa-brands fa-youtube"></i>
-                            </li>
-                            <li class="list-group-item">
-                                <i class="fa-brands fa-github"></i>
+                                <a href="https://twitter.com/TechKin1132" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
                             </li>
                         </ul>
                     </div>

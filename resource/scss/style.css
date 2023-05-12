@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font: 400 16px "Source Sans Pro", sans-serif;
+  font: 400 14px "Source Sans Pro", sans-serif;
   color: #000000;
   background: #ffffff;
   line-height: 2;
@@ -131,6 +131,9 @@ p {
   height: 60px;
   line-height: 50px;
 }
+.social-icons li a {
+  color: #333333;
+}
 .social-icons li i {
   font-size: 24px;
   cursor: pointer;
@@ -164,9 +167,9 @@ p {
 ****************** About Me Parts Codes
 ****************************************************************/
 .about_me {
-  background: rgba(245, 245, 245, 0.646);
   position: relative;
   padding: 100px 0px;
+  background: rgba(245, 245, 245, 0.646);
 }
 .about_me h2 {
   font-size: 30px;
@@ -192,23 +195,27 @@ p {
   text-decoration: underline;
 }
 .about_me .my_skills button {
-  padding: 10px 15px;
-  margin: 10px 5px;
-  background: #E7E7E7;
+  margin: 5px 3px;
+  background: #f2f2f2;
   border: none;
   outline: none;
   color: #222;
   font-weight: 500;
   cursor: text;
 }
+.about_me .my_skills .skillSubTitle {
+  font-size: 16px;
+  margin: 15px 0px;
+  font-weight: 400;
+}
 
 /**************************************************************
 ****************** Project Part Codes
 ****************************************************************/
 .projects {
-  padding: 140px 0px;
+  padding: 160px 0px;
   position: relative;
-  background: #ffffff;
+  box-shadow: 1px 0px 1px rgb(200, 196, 196);
 }
 .projects .header p {
   text-align: center;
@@ -234,7 +241,7 @@ p {
 ****************************************************************/
 .contact {
   background: rgba(245, 245, 245, 0.646);
-  padding: 100px 0px;
+  padding: 90px 0px;
   position: relative;
 }
 .contact .header p {
@@ -244,26 +251,25 @@ p {
   margin: 0 auto;
 }
 .contact .contact-form {
-  background: #ffffff;
   padding: 50px 80px;
   border-radius: 10px;
   color: #333333;
   font-weight: 600;
-  box-shadow: 0px 0px 8px rgb(216, 213, 213);
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
 }
-.contact .contact-form textarea, .contact .contact-form input {
-  background: #f5f5f5;
-  font-size: 18px;
-  border: none;
+.contact .contact-form h2 {
+  font-size: 22px;
+  text-transform: capitalize;
 }
-.contact .contact-form .form-group {
+.contact .contact-form .contact-group {
   margin: 20px 0px;
 }
-.contact .contact-form .form-group textarea {
-  resize: none;
-}
-.contact .contact-form .form-group input {
-  height: 55px;
+.contact .contact-form .contact-group a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
 }
 
 /**************************************************************
@@ -335,7 +341,7 @@ p {
 ****************************************************************/
 @media screen and (max-width: 992px) {
   .projects {
-    padding: 170px 0px;
+    padding: 215px 0px;
   }
   .projects .main-content {
     text-align: center;
